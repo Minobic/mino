@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="banner"></div>
+    </header>
+    <header class="nav-head">
+        <div class="nav-wrapper">
+            <nav>
+                <input class="hidden" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-tabs">
+                      <li class="nav-tab"><a href="/home.html">Home</a></li>
+                      <li class="nav-tab"><a href="/buttons/services.html">Services</a></li>
+                      <li class="nav-tab"><a href="/buttons/contact.html">Contact</a></li>
+                      <li class="nav-tab"><a href="/buttons/about.html">About</a></li>
+                      <li class="nav-tab"><a href="/buttons/login.html">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="card-container">
+        <div class="float-layout">
+          <div class="card-image">
+            <img src="/media/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg">
+            <div class="card">
+              <div class="card-title">Title</div>
+              <div class="card-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper
+                mollis tempus. Mauris eu maximus lectus, eu auctor justo. Aenean porta purus
+                vel commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="float-layout">
+          <div class="card-image">
+            <img src="/media/steven-houston-d2lO9btumD4-unsplash.jpg">
+            <div class="card">
+              <div class="card-title">Title</div>
+              <div class="card-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper
+                mollis tempus. Mauris eu maximus lectus, eu auctor justo. Aenean porta purus
+                vel commodo consequat.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
