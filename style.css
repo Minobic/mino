@@ -1,0 +1,242 @@
+*{
+  box-sizing: border-box;
+  list-style: none;                                                                 
+}
+body{
+  margin: 0px;
+}
+
+header{
+  background-color: black;
+}
+
+footer, nav{
+  display: flex;
+  background-color: #333;
+  transition: 0.3s;
+  position: sticky;
+  top: 0.1px;
+}
+footer a, nav a{
+  text-align: center;
+  transition: 0.3s;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  
+}
+
+.left{
+  text-align: left;
+  height: 100%;
+  padding: 75px 0px;
+  min-height: 40vh;
+  margin: 0 60px;
+  transition: 0.3s;
+}
+.right{
+  text-align: right;
+  height: 100%;
+  padding: 75px 0px;
+  min-height: 40vh;
+  margin: 0 60px;
+  transition: 0.3s;
+}
+
+.right:hover, .left:hover, .about:hover{
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  padding: 85px 15px;
+  font-size: 18px; 
+  margin: 0 70px;
+  transition: 0.3s;
+}
+
+@keyframes myAnim {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+	}
+}
+
+.about{
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.big{
+  padding: 40px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+.banner{
+  background-image: url("/MinoBot.png");
+  height: 20vw;
+  min-height: 100px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 60%;
+  background-attachment: fixed;
+}
+
+.flex-align-right{
+  margin-left: auto;
+}
+
+footer a:hover, .menu-btn:hover{
+  background-color: #ddd;
+  color: black;
+  transition: 0.3s;
+}
+
+h2 span{
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  padding: 10px 55px;
+  border-radius: 20px;
+  color: white;
+  background-size: 120% 120%;
+  animation: gradient-animation-text 3s ease infinite;
+}
+
+@keyframes gradient-animation-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo{
+  border-radius: 50%;
+}
+
+.profile-name{
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  margin: 20px 0px 30px 0px;
+  font-family: myFirstFont;
+}
+
+@font-face{
+  font-family: myFirstFont;
+  src: url(./Chewy/Chewy-Regular.ttf);
+    font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 4px;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  margin: 20px 0px 30px 0px;
+}
+
+.sm-handle a{
+  background-color: rgb(125 125 125 / 25%);
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin: 5px 10px;
+  text-decoration: none;
+  font-size: 1.25em;
+  transition: 0.3s;
+}
+
+.sm-handle a:hover{
+  background-color: rgb(30 30 30 /25%);
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+.sm-handle a i{
+  margin: 5px;
+}
+
+.yt{
+  color: #FF0000;
+}
+
+.dc{
+  color: #5865F2;
+}
+
+.ig{
+  color: #dd2a7b;
+}
+
+div p{
+  font-size: 1.45em;
+  padding: 0px 5px;
+}
+
+.button{
+  background-color: rgb(125 125 125 / 25%);
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin: 5px 10px;
+  text-decoration: none;
+  font-size: 1.25em;
+  transition: 0.3s;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color: rgb(30 30 30 /25%);
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+hr{
+  height: 5px;
+  background: linear-gradient(52deg,#00ffff,#ff0004,#00fbff);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  footer, nav{
+    flex-direction: column;
+    padding: 10px 0px;
+    position: relative;
+  }
+  .flex-align-right{
+    margin-left: 0;
+  }
+  .left{
+  text-align: center;
+  height: 100%;
+  padding: 15px 0px;
+  min-height: 40vh;
+  margin: 0 60px;
+}
+.right{
+  text-align: center;
+  height: 100%;
+  padding: 15px 0px;
+  min-height: 40vh;
+  margin: 0 60px;
+}
+  
+}
